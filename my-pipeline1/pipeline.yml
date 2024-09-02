@@ -1,0 +1,8 @@
+name: my-pipeline1 # required, not space or specical chars allowed
+source:
+  startBlock: 10000000
+eventHandlers: # multiple handlers
+  - event:
+    handler: HandlePrintLog
+blockHandlers:
+  - handler: HandlePrintBlock

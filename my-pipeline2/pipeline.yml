@@ -1,0 +1,10 @@
+name: my-pipeline2 # required, not space or specical chars allowed
+source:
+  type: rpc
+  rpc: "https://compatible-warmhearted-bush.quiknode.pro/5369067912a20632dde6c49f09e0ded66a95fd70/"
+  startBlock: 10000000
+eventHandlers: # multiple handlers
+  - event:
+    handler: HandlePrintLog
+blockHandlers:
+  - handler: HandlePrintBlock
